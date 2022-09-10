@@ -1,6 +1,6 @@
 from jsonassessment import JsonPlaceholder # to import class
-import requests # to call directly
-import pytest # for pytest destroctors
+import requests
+import pytest 
 
 
 def test_posts():
