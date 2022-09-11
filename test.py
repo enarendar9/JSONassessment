@@ -22,7 +22,7 @@ def test_users():
     response = requests.get("https://jsonplaceholder.typicode.com/users")
     assert jp.users().text==response.text
 
-# for multiple test case passing params
+# for multiple test case passing parameters
 @pytest.mark.parametrize("val", [10,13,101])
 
 def test_postWithid(val):
@@ -31,10 +31,9 @@ def test_postWithid(val):
     response = requests.get("https://jsonplaceholder.typicode.com/posts/"+str(val))
     assert jp.postWithid(val).text==response.text 
 
-# for multiple test casing passing params
-@pytest.mark.parametrize("val", [
-    10,13,200
-])
+# for multiple test case passing parameters
+@pytest.mark.parametrize("val", [10,13,200])
+
 def test_getComments(val):
     jp = JsonPlaceholder("https://jsonplaceholder.typicode.com/")
     # to call wihtout using class
