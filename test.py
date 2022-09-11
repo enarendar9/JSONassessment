@@ -23,9 +23,8 @@ def test_users():
     assert jp.users().text==response.text
 
 # for multiple test casing passing params
-@pytest.mark.parametrize("val", [
-    10,13,101
-])
+@pytest.mark.parametrize("val", [10,13,101])
+
 def test_postWithid(val):
     jp = JsonPlaceholder("https://jsonplaceholder.typicode.com/")
     # to call wihtout using class
