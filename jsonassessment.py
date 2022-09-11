@@ -109,8 +109,8 @@ if __name__=='__main__':
     # 5. Post 101
     #  Checking for status
     print("-------Try to Retrieve 101 post------------")
-    post10=jsonPlaceHolder.postWithid(101)
-    if(post10.status_code!=404):
+    post101=jsonPlaceHolder.postWithid(101)
+    if(post101.status_code!=404):
         print("Successfully Retrieved Post 101")
         #print("Title fo Post#101")
         print("Encoding Property returned in the object is :- ",post101.encoding)
