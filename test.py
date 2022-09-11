@@ -22,7 +22,7 @@ def test_users():
     response = requests.get("https://jsonplaceholder.typicode.com/users")
     assert jp.users().text==response.text
 
-# for multiple test casing passing params
+# for multiple test case passing params
 @pytest.mark.parametrize("val", [10,13,101])
 
 def test_postWithid(val):
